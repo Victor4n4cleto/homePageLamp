@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2? family = Oswald: wght @ 200; 400 & display = swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+.main-index {
+    background: #000051;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav .menu-img{
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav .logo {
+    width: 160px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* botao on/off */
+button {
+    background: #fff;
+    height: 35px;
+    width: 70px;
+    margin-left: 80px;
+    margin-right: -40px;
+    border-radius: 20px;
+    border: o;
+    outline: o;
+    cursor: pointer;
+    transition: background 0.20s;
+}
+
+button span {
+    display: block;
+    background: #534bae;
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background 0.6s, margin-left 0.20s;
+}
+
+.active {
+    background: #534bae;
+}
+.active span {
+    background: #fff;
+    margin-left: 36px;
+}
+/* termina  botao on/off */
+
+/* terminou a config do navbar */
+
+.lampada-container {
+    position: absolute;
+    top: 0;
+    left: 22%;
+    width: 200px;
+}
+
+.lampada {
+    width: 100%;
+}
+
+.luz {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 700px;
+    margin-left: -10px;
+    margin-top: -10px;
+    opacity: 0;
+    transition: opacity 0,6s;
+}
+
+.on {
+    opacity: 1;
+}
+
+.texto-container {
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+
+.texto-container h1 {
+    font-size: 100px;
+    font-weight: 600px;
+}
+
+.texto-container #txt {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
+.texto-container a {
+    text-decoration: none;
+    background: #534bae;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.controle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px;
+}
+
+.controle .linha {
+    width: 250px;
+    height: 4px;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 2px;
+
+}
+
+.controle .linha span {
+    width: 35%;
+    height: 8px;
+    margin-top: -2px;
+    
+    border-radius: 4px;
+    background: #534bae;
+    display: block;
+}
